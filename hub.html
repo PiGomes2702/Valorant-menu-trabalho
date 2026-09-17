@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Riot Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("images/hub.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: hidden;
+        }
+
+        /* BOTÃO INVISÍVEL EM CIMA DO "JOGAR" */
+        .jogar {
+            position: absolute;
+
+            left: 8.7%;
+            top: 83.5%;
+
+            width: 12%;
+            height: 8%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button
+        class="jogar"
+        onclick="abrirMenu()">
+    </button>
+
+    <script>
+        function abrirMenu() {
+            window.location.href = "menu.html";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sair</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("images/saida.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: hidden;
+        }
+
+        /* BOTÃO "SAIR PARA A ÁREA DE TRABALHO" */
+        .sair-desktop {
+            position: absolute;
+
+            left: 40%;
+            top: 60%;
+
+            width: 20.5%;
+            height: 5.5%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SAIR PARA A ÁREA DE TRABALHO -->
+    <button
+        class="sair-desktop"
+        onclick="irParaDesktop()">
+    </button>
+
+    <script>
+        function irParaDesktop() {
+            window.location.href = "index.html";
+        }
+
+        /* ESC VOLTA PARA O MENU */
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                window.location.href = "menu.html";
+            }
+        });
+    </script>
+
+</body>
+</html>

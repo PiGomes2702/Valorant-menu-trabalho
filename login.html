@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("images/login.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: hidden;
+        }
+
+        /* CAMPO DE USUÁRIO */
+        .usuario {
+            position: absolute;
+
+            left: 3.6%;
+            top: 29%;
+
+            width: 18.7%;
+            height: 5.5%;
+
+            box-sizing: border-box;
+
+            border: none;
+            outline: none;
+
+            background: transparent;
+
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* CAMPO DE SENHA */
+        .senha {
+            position: absolute;
+
+            left: 3.6%;
+            top: 36.6%;
+
+            width: 18.7%;
+            height: 5.5%;
+
+            box-sizing: border-box;
+
+            border: none;
+            outline: none;
+
+            background: transparent;
+
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* BOTÃO INVISÍVEL DE CONTINUAR */
+        .continuar {
+            position: absolute;
+
+            left: 10.9%;
+            top: 73.2%;
+
+            width: 4.2%;
+            height: 7.5%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input
+        class="usuario"
+        type="text"
+    >
+
+    <input
+        class="senha"
+        type="password"
+    >
+
+    <button
+        class="continuar"
+        onclick="continuar()">
+    </button>
+
+    <script>
+        function continuar() {
+            window.location.href = "hub.html";
+        }
+    </script>
+
+</body>
+</html>

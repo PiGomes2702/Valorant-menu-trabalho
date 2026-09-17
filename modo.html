@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modo</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("images/modo.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        /* ESC VOLTA PARA O SEGUNDO MENU */
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                window.location.href = "smenu.html";
+            }
+        });
+    </script>
+
+</body>
+</html>

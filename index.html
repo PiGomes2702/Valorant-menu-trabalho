@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>VALORANT</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("images/desktop.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: hidden;
+        }
+
+        .valorant-icon {
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            width: 100px;
+            height: 100px;
+
+            transform: translate(-50%, -50%);
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="valorant-icon" onclick="abrirLogin()"></div>
+
+    <script>
+        function abrirLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>

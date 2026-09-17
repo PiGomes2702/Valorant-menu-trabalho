@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Coleção</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("images/armas.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: hidden;
+        }
+
+        /* BOTÃO JOGAR */
+        .jogar {
+            position: absolute;
+
+            left: 40.6%;
+            top: 0%;
+
+            width: 15%;
+            height: 3.5%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+
+        /* ÍCONE DO PASSE */
+        .passe {
+            position: absolute;
+
+            left: 31.5%;
+            top: 0%;
+
+            width: 2%;
+            height: 3.5%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+
+        /* ÍCONE DE AGENTES */
+        .agentes {
+            position: absolute;
+
+            left: 35%;
+            top: 0%;
+
+            width: 2%;
+            height: 3.5%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+
+        /* ÍCONE DA LISTA */
+        .lista {
+            position: absolute;
+
+            left: 38%;
+            top: 0%;
+
+            width: 2%;
+            height: 3.5%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+
+        /* ÍCONE DA LOJA — CARRINHO */
+        .loja {
+            position: absolute;
+
+            left: 63.5%;
+            top: 0%;
+
+            width: 2%;
+            height: 3.5%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+
+        /* BOTÃO SUPERIOR DIREITO — SAÍDA */
+        .saida {
+            position: absolute;
+
+            left: 96%;
+            top: 0%;
+
+            width: 4%;
+            height: 6%;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- JOGAR -->
+    <button
+        class="jogar"
+        onclick="window.location.href='smenu.html'">
+    </button>
+
+    <!-- PASSE -->
+    <button
+        class="passe"
+        onclick="abrirPasse()">
+    </button>
+
+    <!-- AGENTES -->
+    <button
+        class="agentes"
+        onclick="abrirAgentes()">
+    </button>
+
+    <!-- LISTA -->
+    <button
+        class="lista"
+        onclick="abrirLista()">
+    </button>
+
+    <!-- LOJA -->
+    <button
+        class="loja"
+        onclick="abrirLoja()">
+    </button>
+
+    <!-- SAÍDA -->
+    <button
+        class="saida"
+        onclick="abrirSaida()">
+    </button>
+
+    <script>
+        function abrirPasse() {
+            window.location.href = "passe.html";
+        }
+
+        function abrirAgentes() {
+            window.location.href = "agentes.html";
+        }
+
+        function abrirLista() {
+            window.location.href = "lista.html";
+        }
+
+        function abrirLoja() {
+            window.location.href = "loja.html";
+        }
+
+        function abrirSaida() {
+            window.location.href = "saida.html";
+        }
+
+        /* ESC VOLTA PARA O MENU NORMAL */
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                window.location.href = "menu.html";
+            }
+        });
+    </script>
+
+</body>
+</html>
